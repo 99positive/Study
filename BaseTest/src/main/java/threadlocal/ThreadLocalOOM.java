@@ -37,7 +37,7 @@ public class ThreadLocalOOM {
 
             Thread.sleep(100);
         }
-        System.out.println("pool_1 execute over");
+        System.out.println("pool execute over");
     }
 
 }

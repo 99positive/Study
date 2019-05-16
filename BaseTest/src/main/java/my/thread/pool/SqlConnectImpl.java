@@ -1,4 +1,4 @@
-package my.thread.pool_3;
+package my.thread.pool;
 
 import java.sql.*;
 import java.util.Map;
@@ -7,11 +7,12 @@ import java.util.concurrent.Executor;
 
 /**
  * Created by lqb
- * on 2019/5/12.
+ * on 2019/5/5.
  */
 public class SqlConnectImpl implements Connection {
 
-    public static Connection fetchConnection() {
+    public static final Connection fetchConnection() {
+        //通过某种方式获取连接池
         return new SqlConnectImpl();
     }
 

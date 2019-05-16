@@ -1,9 +1,6 @@
-package my.thread.pool_1;
-
-import javafx.concurrent.Worker;
+package my.thread.pool;
 
 import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.atomic.AtomicInteger;

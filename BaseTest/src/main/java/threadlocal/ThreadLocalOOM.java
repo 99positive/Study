@@ -10,8 +10,7 @@ import java.util.concurrent.TimeUnit;
 public class ThreadLocalOOM {
     private static final int TASK_LOOP_SIZE = 500;
 
-    final static ThreadPoolExecutor poolExecutor
-            = new ThreadPoolExecutor(5, 5,
+    final static ThreadPoolExecutor poolExecutor = new ThreadPoolExecutor(5, 5,
             1,
             TimeUnit.MINUTES,
             new LinkedBlockingQueue<>());

@@ -1,4 +1,6 @@
-package tools;
+package threadwait;
+
+import tools.SleepTools;
 
 import java.util.concurrent.CountDownLatch;
 

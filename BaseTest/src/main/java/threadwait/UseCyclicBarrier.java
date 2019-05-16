@@ -1,5 +1,7 @@
 package threadwait;
 
+import tools.SleepTools;
+
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
@@ -12,7 +14,7 @@ import java.util.concurrent.CyclicBarrier;
 public class UseCyclicBarrier {
 
     private static final int THREAD_NUM = 3;
-    private static CyclicBarrier thread = new CyclicBarrier(THREAD_NUM, new ResultThread());
+    private static CyclicBarrier barrier = new CyclicBarrier(THREAD_NUM, new ResultThread());
 
     private static ConcurrentMap<String, Long> resultMap = new ConcurrentHashMap<>(THREAD_NUM);
 
@@ -36,9 +38,9 @@ public class UseCyclicBarrier {
             try {
                 resultMap.put(Thread.currentThread().getName(), Thread.currentThread().getId());
                 System.out.println("one do something ...");
-                thread.await();
+                barrier.await();
                 System.out.println("two do something ...");
-                thread.await();
+                barrier.await();
                 System.out.println("BaseThread .. Run end");
             } catch (InterruptedException | BrokenBarrierException e) {
                 e.printStackTrace();
@@ -50,6 +52,7 @@ public class UseCyclicBarrier {
         for (int i = 0; i < THREAD_NUM; i++) {
             new Thread(new BaseThread()).start();
         }
+        SleepTools.ms(10);
         System.out.println("main ... end");
     }
 }

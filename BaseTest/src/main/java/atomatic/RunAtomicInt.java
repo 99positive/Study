@@ -12,14 +12,13 @@ public class RunAtomicInt {
     private AtomicInteger atomicInteger = new AtomicInteger(0);
 
     public void increase() {
-
         for (;;){
-            boolean state = this.compareAndSet(this.getCount(), this.getCount()+1);
+            int i = this.getCount();
+            boolean state = this.compareAndSet(i, i + 1);
             if (state) {
                 break;
             }
         }
-
     }
 
     public int getCount(){

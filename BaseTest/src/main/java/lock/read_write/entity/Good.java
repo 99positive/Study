@@ -5,6 +5,7 @@ import tools.SleepTools;
 /**
  * Created by lqb
  * on 2019/5/22.
+ * 节省一步sql操作，用线程等待处理
  */
 public class Good {
     private String name;

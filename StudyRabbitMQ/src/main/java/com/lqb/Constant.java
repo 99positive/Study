@@ -13,6 +13,9 @@ public class Constant {
 
     public static final String EXCHANGE_ROUT = "routing";
 
+    public static final String EXCHANGE_TOPICS = "topics";
+
     public static final String TYPE_DIRECT = "direct";
     public static final String TYPE_FANOUT = "fanout";
+    public static final String TYPE_TOPIC = "topic";
 }

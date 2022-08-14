@@ -4,7 +4,6 @@ import com.lqb.Constant;
 import com.lqb.utils.RabbitMQUtils;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
-import org.apache.tomcat.util.bcel.Const;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;

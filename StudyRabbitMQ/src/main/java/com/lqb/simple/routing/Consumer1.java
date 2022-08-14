@@ -1,7 +1,7 @@
-package com.lqb.routing;
+package com.lqb.simple.routing;
 
 import com.lqb.Constant;
-import com.lqb.utils.RabbitMQUtils;
+import com.lqb.simple.utils.RabbitMQUtils;
 import com.rabbitmq.client.*;
 
 import java.io.IOException;

@@ -1,6 +1,6 @@
-package com.lqb.fanout;
+package com.lqb.simple.fanout;
 
-import com.lqb.utils.RabbitMQUtils;
+import com.lqb.simple.utils.RabbitMQUtils;
 import com.rabbitmq.client.*;
 
 import java.io.IOException;

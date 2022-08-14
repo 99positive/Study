@@ -1,8 +1,7 @@
-package com.lqb.base;
+package com.lqb.simple.base;
 
-import com.lqb.utils.RabbitMQUtils;
+import com.lqb.simple.utils.RabbitMQUtils;
 import com.rabbitmq.client.*;
-import com.sun.org.apache.bcel.internal.generic.FADD;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;

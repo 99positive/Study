@@ -1,6 +1,6 @@
-package com.lqb.work;
+package com.lqb.simple.work;
 
-import com.lqb.utils.RabbitMQUtils;
+import com.lqb.simple.utils.RabbitMQUtils;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.MessageProperties;

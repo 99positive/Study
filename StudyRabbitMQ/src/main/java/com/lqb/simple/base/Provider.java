@@ -1,7 +1,6 @@
-package com.lqb.base;
+package com.lqb.simple.base;
 
-import ch.qos.logback.core.util.ContextUtil;
-import com.lqb.utils.RabbitMQUtils;
+import com.lqb.simple.utils.RabbitMQUtils;
 import com.rabbitmq.client.*;
 import org.junit.jupiter.api.Test;
 

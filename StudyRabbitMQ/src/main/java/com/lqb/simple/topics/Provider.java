@@ -1,7 +1,7 @@
-package com.lqb.topics;
+package com.lqb.simple.topics;
 
 import com.lqb.Constant;
-import com.lqb.utils.RabbitMQUtils;
+import com.lqb.simple.utils.RabbitMQUtils;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 
